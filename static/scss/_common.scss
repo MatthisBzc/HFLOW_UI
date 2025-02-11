@@ -1,0 +1,237 @@
+@import '_variables.scss';
+@import '_fonts.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-indent: 0;
+}
+
+html {
+    font-size: $font-size;
+    padding: 0;
+}
+body, form, input {
+    font-family: $font-family;
+}
+body {
+    line-height: 1.5em;
+    margin: 0; padding: 0;
+    background-color: $bg-color;
+}
+
+/* Basics */
+
+p { margin: 1em 0; }
+
+a:link {
+    color: $link-color;
+    text-decoration: none;
+}
+a:visited {
+    @extend a:link;
+    color: $link-visited-color;
+}
+a:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+}
+
+/* Lists */
+
+ul, ol {
+    margin: 0 0 0 $bullet-indent;
+    padding: 0;
+
+    & > li {
+        margin: 1em 0;
+    }
+    & > :first-child {
+    }
+    & > :last-child {
+    }
+}
+
+ul > li {
+    list-style: disc;
+}
+
+ol {
+	counter-reset: ord-counter;
+}
+ol > li {
+    list-style: none;
+    clear: left;
+}
+ol > li:before {
+    float: left;
+    margin-left: -$bullet-indent;
+	content: counter(ord-counter);
+	counter-increment: ord-counter;
+    font-weight: 800;
+    color: #666;
+}
+
+li {
+    margin: 1em 0;
+}
+li > :first-child {
+    margin-top: 0;
+}
+li > :last-child {
+    margin-bottom: 0;
+}
+
+/* Tables */
+
+table, td, th {
+    font-size: 1rem;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    //border: 1px solid $table-border-color;
+    margin: 1em 0;
+}
+td, th {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.7em 0.8em;
+}
+th {
+    cursor: auto;
+    text-align: left;
+    font-weight: 800;
+    text-transform: none;
+    border-left: none;
+    border-bottom: 1px solid $table-head-color;
+    background-color: transparent;
+    padding-bottom: 0;
+}
+
+tr.divider > td {
+    border-bottom: 2px solid $table-head-color;
+}
+
+td {
+    border-top: 1px solid $table-border-color;
+}
+table tr:first-child > td {
+    border-top: none;
+}
+td > :first-child, th > :first-child {
+    margin-top: 0;
+}
+td > :last-child, th > :last-child {
+    margin-bottom: 0;
+}
+td > ul:first-child > li:first-child {
+    margin-top: 0;
+}
+td > ul:last-child > li:last-child {
+    margin-bottom: 0;
+}
+
+table.table {
+    width: 100%;
+}
+
+table > thead > tr > th:first-child { border-left: none; }
+
+
+/* Code */
+
+pre, code, tt, a.Hom, a.Vex {
+    font-family: $monospace-family;
+}
+
+pre {
+    padding: 0.5em;
+    overflow: auto;
+    line-height: 1rem;
+    color: $code-color;
+    background-color: $code-bg-color;
+
+    &.numbered {
+        counter-reset: line-nos;
+
+        span.line {
+            display: block;
+            margin-left: 3em;
+
+            &:before {
+                display: block;
+                float: left;
+                margin-left: -3rem;
+                padding: 0.0715rem 1rem 0 0;
+                width: 3rem;
+                text-align: right;
+                content: counter(line-nos);
+                counter-increment: line-nos;
+                color: $medium-color;
+                font-size: 0.857rem;
+            }
+        }
+    }
+}
+
+code {
+}
+
+/* Buttons */
+
+button {
+    border: 1px solid #58a4ff;
+    background-color: transparent;
+    color: #58a4ff;
+    border-radius: 0;
+    margin: 0 0.5em; padding: 0.5em 1em;
+    font-weight: normal;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #58a4ff;
+    color: white;
+}
+button:active {
+    background-color: #069;
+}
+
+button.primary {
+    border-color: #f90;
+    color: #f90;
+    font-weight: 600;
+}
+button.primary:hover {
+    background-color: #f90;
+}
+button.primary:active {
+    background-color: #f60;
+}
+
+button.secondary {
+    border-color: #999;
+    color: #999;
+}
+button.secondary:hover {
+    background-color: #999;
+    color: white;
+}
+button.secondary:active {
+    background-color: #666;
+}
+
+button.compact {
+    padding: 0.25em 0.5em;
+}
+
+/* Alternate styling for design elements inside inverted parent */
+
+.inverted  {
+    pre, code {
+        background-color: black;
+        color: #ccc;
+    }
+
+    table, table td { border-color: $inv-table-border-color; }
+    th { background-color: $inv-table-head-color; }
+}

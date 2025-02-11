@@ -1,0 +1,29 @@
+@import '_variables.scss';
+
+// Grouping
+
+.row {
+    display: block;
+    margin: 0 -0.5em;
+}
+.col {
+    float: left;
+    vertical-align: top;
+    padding: 0 0.5em;
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+
+@media (min-width: $small-breakpoint) {
+    @for $colcount from 2 through 12 {
+        /* #{$colcount} column grid */
+
+        @for $colspan from 1 through $colcount {
+            .col_#{$colspan}_of_#{$colcount} {
+                width: $colspan * (100% / $colcount);
+            }
+        }
+    }
+}
