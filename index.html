@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    
+    
+
+
+    <link rel="icon" href="icon/hflow_ui_icon.png">
+
+    
+    <link rel="stylesheet" href="static/css/pygments/autumn.css">
+    <link rel="stylesheet" href="static/scss/page.css">
+
+    <link rel="stylesheet" href="static/scss/page.css">
+
+    <link rel="stylesheet" href="static/scss/hpage.css">
+    <!-- .. -->
+
+
+    <script src="static/js/jquery.min.js"></script>
+    
+    
+    <script type="text/javascript" src="static/js/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="static/js/flot/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="static/js/search.js"></script>
+    <script type="text/javascript" src="static/js/page.js"></script>
+    <script type="text/javascript" src="static/js/filters.js"></script>
+    <script type="text/javascript" src="static/js/respond.matchmedia.addListener.min.js"></script>
+
+    <script type="text/javascript" src="static/js/load.js"></script>
+    <script type="text/javascript" src="static/js/qwebchannel.js"></script>
+
+
+    <title>HFLOW UI</title>
+
+</head>
+<body class="notoc">
+
+
+        
+    <main>
+        <header class=""
+            
+        >
+            
+
+                <div class="pageicon"><img src="icon/hflow_ui_icon.png"
+         class="icon"
+         
+         
+    /></div><h1 class="title " >
+                    HFLOW UI
+
+                    
+    
+        <span class="subtitle"></span>
+    
+
+                </h1>
+                
+                
+    <p class="summary">v 1.0</p>
+
+                
+            </div>
+            
+
+            
+        </header>
+
+        
+
+        <div id="content">
+            <table id="premeta" class="metatable">
+                
+    
+                    
+                    
+                    
+                        
+    
+        <tr>
+            <td class="label ">
+                
+                On this page
+            </td>
+            <td class="content">
+                
+                    
+                            
+    <ul class="content">
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#installation">Installation</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#overview">Overview</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading collapsible collapsed ">
+                <p class="label ">
+                    <a href="#features">Features</a>
+                </p>
+                
+                    
+    <ul class="content">
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#preferences-window">Preferences Window</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#fullscreen">Fullscreen</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#dynamic-pane-resize">Dynamic Pane Resize</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#color-scheme">Color Scheme</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#custom-splash-screen">Custom Splash Screen</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#most-common-nodes">Most Common Nodes</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#scale-rotate-nodes">Scale Rotate Nodes</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#look-inside-node">Look Inside Node</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#background-images">Background Images</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#network-editor-shortcuts">Network Editor Shortcuts</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#overlay-network-editor">Overlay Network Editor</a>
+                </p>
+                
+            </li>
+        
+            
+            <li class="miniheading  ">
+                <p class="label ">
+                    <a href="#embed-window">Embed Window</a>
+                </p>
+                
+            </li>
+        
+    </ul>
+
+                
+            </li>
+        
+    </ul>
+
+                        
+                
+            </td>
+        </tr>
+    
+
+                    
+                
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    
+
+            </table>
+            <div class="clear"></div>
+
+            
+            
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >If you encounter any bugs, have any questions or suggestions for new or existing features, please contact me via email or discord:</p>
+
+
+    
+    <p ><i class="fa fa-envelope"></i> <a href="mailto:matthis.bozec@gmail.com"> matthis.bozec@gmail.com</a></p>
+
+
+    
+    <p ><img src="img/discord.svg"
+         class="icon medium"
+         
+         
+    /> @matthis.bozec</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >This package is compatible from <i >Houdini <b >20.0</b></i> and above but certain features are not compatible with every version, check the features documentation for compatibility info.</p>
+
+
+    
+    <p >The package was tested on Windows but should work on other platforms, if you encounter any issues with a specific OS please contact me.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h2 class="label heading" id="installation"
+            data-title="installation"
+        >
+            
+            Installation
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#installation">¶</a></span>
+        </h2>
+        <div id="installation-body" class="content">
+            
+                
+        
+    <p class="summary">Thanks to houdini's package system, <i >HFLOW UI</i> is easy and straightforward to install.</p>
+
+    
+    <p >You can buy and download the latest version of the package from <a href="https://mattbzc.gumroad.com/l/hflow_ui">Gumroad</a>.</p>
+
+
+    
+    <p >Then head to your houdini preferences (Documents/houdiniXX.Y/ by default) and find the <b >packages</b> folder (create it if it doesn't exist), in there place the <i >hflow_ui.json</i> file and the <i >HFLOW_UI</i> folder.</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/help_00.png">
+</p>
+
+
+    
+    <p >Now you can restart or launch houdini and the package will be loaded.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >Buying the package also gives you access to future updates that will be updated on Gumroad, if a new version is available, you will see a message in the preferences window.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h2 class="label heading" id="overview"
+            data-title="overview"
+        >
+            
+            Overview
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#overview">¶</a></span>
+        </h2>
+        <div id="overview-body" class="content">
+            
+                
+        
+    
+    <p >The <i >HFLOW UI</i> package adds general user interface improvements to <i >Houdini</i>.
+There are different features to play around with, each one is easily customizable through the preferences window.
+From there you can enable/disable each feature, edit hotkeys and change the settings.</p>
+
+<b >Preferences window:</b>
+    
+    <p >You can access the preferences window from the <i >Edit &gt; Preferences</i> menu or with the <i >Open/Close Preferences</i> shortcut if the feature is enabled. (<span class="keys"><kbd>Ctrl+H</kbd></span> by default.)</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/help_01.png">
+</p>
+
+<b >Editing Preferences:</b>
+    
+    <p >You can edit all of the package's preferences from this window.
+When editing the preferences, changes take effect immediately but you can save or discard your changes using the buttons in the bottom right corner.
+You can also undo any changes <span class="keys"><kbd>Ctrl+Z</kbd></span> or reset the preferences to their default values via the <i >Reset to Default</i> button (bottom left).</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/help_02.png">
+</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >You can right-click any feature in the preferences window to quickly access options for:</p>
+
+
+    <ul class="bullets">
+    
+    
+
+    <li class="bullet  ">
+        
+
+        <p class="label" >Discarding changes</p>
+        
+    </li>
+
+    
+
+    <li class="bullet  ">
+        
+
+        <p class="label" >Applying changes</p>
+        
+    </li>
+
+    
+
+    <li class="bullet  ">
+        
+
+        <p class="label" >Resetting to default</p>
+        
+    </li>
+
+    
+
+    <li class="bullet  ">
+        
+
+        <p class="label" >Saving current settings as default</p>
+        
+    </li>
+
+    </ul>
+
+    
+    <p >for that specific feature only.</p>
+
+
+        </div>
+    </div>
+
+</div>
+<b >Shortcuts:</b>
+    
+    <p >With the <i >HFLOW UI</i> package, you can edit and customize the different shortcuts to your liking by clicking on the <i >Shortcuts</i> button which will open a popup window to add a new shortcut, you can then apply, cancel or unbind the shortcut.
+The shortcuts can be a combination of any key and mouse buttons, whenever the hotkey is triggered the corresponding action will be run but some actions might require conditions to be met for the action to be executed. <i >(For example being above a node in the network editor)</i>.
+In general it is recommended to avoid using common shortcuts for the actions like <span class="keys"><kbd>LeftButton</kbd></span> or <span class="keys"><kbd>Ctrl+Z</kbd></span>.</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/help_03.png">
+</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            
+    
+    <p >Due to a bug in Houdini, it is not recommended to use this package with Houdini <b >20.5.279</b> to <b >20.5.365</b> and <b >Python 3.11</b>
+    This version can cause houdini to crash on startup.
+    Please use another version or install Houdini with Python 3.10 via the launcher</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h2 class="label heading" id="features"
+            data-title="features"
+        >
+            
+            Features
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#features">¶</a></span>
+        </h2>
+        <div id="features-body" class="content">
+            
+                
+        
+    
+    <p >The package is broken down into different features, that each contain <i >shortcuts</i>, <i >actions</i> and <i >settings</i>.
+Each feature can be enabled/disabled in the preferences. By default, certain features are disabled, and certain shortcuts are not assigned.</p>
+
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="preferences-window"
+            data-title="preferences window"
+        >
+            
+            Preferences Window
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#preferences-window">¶</a></span>
+        </h3>
+        <div id="preferences-window-body" class="content">
+            
+                
+        
+    <p class="summary">This feature is used to control shortcuts and settings regarding the preferences window.</p>
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="open-close-hflow-ui-preferences" class="def  ">
+        <p class="label "><i >Open/Close HFLOW UI Preferences</i>
+        </p>
+        <div class="content">
+    
+    <p >Opens or closes the HFLOW UI preferences window.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="open-documentation" class="def  ">
+        <p class="label "><i >Open Documentation</i>
+        </p>
+        <div class="content">
+    
+    <p >This will open a Houdini help Browser with documentation for the package (You can also press the &ldquo;?&rdquo; button in the top right)</p>
+
+<i >This shortcut is only triggered if the preferences window is currently active</i></div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="open-hflow-ui-preferences-on-startup" class="def  ">
+        <p class="label "><i >Open HFLOW UI Preferences on startup</i>
+        </p>
+        <div class="content">
+    
+    <p >When enabled, the HFLOW UI preferences window will open automatically when Houdini starts.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="fullscreen"
+            data-title="fullscreen"
+        >
+            
+            Fullscreen
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#fullscreen">¶</a></span>
+        </h3>
+        <div id="fullscreen-body" class="content">
+            
+                
+        
+    <p class="summary">This feature enables the fullscreen mode for the Houdini windows</p>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            
+    <div class="platform_group item_group">
+        
+    
+    
+        
+    
+    
+    
+    
+    
+
+    <div class="notice ind-item platform windows ">
+        <p class="label"><span class="g fa fa-fw fa-windows"></span>Windows</p>
+        <div class="content">
+            
+        </div>
+    </div>
+
+
+    </div>
+
+    
+    <p >On Windows 11, the fullscreen mode still shows the taskbar which means the only space gained is with the title bar.
+    You can set the taskbar to auto-hide but <i >Houdini</i> can display incorrectly when this is enabled.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="set-fullscreen" class="def  ">
+        <p class="label "><i >Set Fullscreen</i>
+        </p>
+        <div class="content">
+    
+    <p >Makes the current active Houdini window fullscreen. <i >(or the last active window if the preferences window is currently the active window)</i></p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="remove-fullscreen" class="def  ">
+        <p class="label "><i >Remove Fullscreen</i>
+        </p>
+        <div class="content">
+    
+    <p >Exits fullscreen mode for the current active Houdini window. <i >(or the last active window if the preferences window is currently the active window)</i></p>
+
+
+    
+    <p >The shorcut is <span class="keys"><kbd>Shift+Escape</kbd></span> by default to avoid conflict with the default Houdini shortcut to cancel cooking.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="toggle-fullscreen" class="def  ">
+        <p class="label "><i >Toggle Fullscreen</i>
+        </p>
+        <div class="content">
+    
+    <p >Toggles fullscreen mode for the current active Houdini window. <i >(or the last active window if the preferences window is currently the active window)</i></p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="show-fullscreen-on-startup" class="def  ">
+        <p class="label "><i >Show Fullscreen on Startup</i>
+        </p>
+        <div class="content">
+    
+    <p >When enabled, the Houdini  main window will start in fullscreen mode.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="show-fullscreen-button" class="def  ">
+        <p class="label "><i >Show Fullscreen Button</i>
+        </p>
+        <div class="content">
+    
+    <p >Adds a button in the bottom right corner of all Houdini windows to toggle fullscreen mode(in the bottom right corner).
+        <img src="img/fullscreen_icon.png"
+         class="icon medium"
+         
+         
+    /></p>
+
+<i >This allows to easily toggle in/out of fullscreen mode for any window</i></div>
+    </div>
+
+    
+    
+    <div id="show-time-when-fullscreen" class="def  ">
+        <p class="label "><i >Show Time When Fullscreen</i>
+        </p>
+        <div class="content">
+    
+    <p >Displays the current time when in fullscreen mode (in the bottom right corner).</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="dynamic-pane-resize"
+            data-title="dynamic pane resize"
+        >
+            
+            Dynamic Pane Resize
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#dynamic-pane-resize">¶</a></span>
+        </h3>
+        <div id="dynamic-pane-resize-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows you to easily resize Houdini panes when moving the mouse close to the pane borders without needing to press the pane splitter, and allows to resize the panes diagonally too</p>
+
+    
+    <p >
+    <img class="img-responsive" src="img/dynamic_pane_resize_demo.gif">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="resize-panes" class="def  ">
+        <p class="label "><i >Resize Panes</i>
+        </p>
+        <div class="content">
+    
+    <p >Activates the dynamic pane resizing mode. </p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            <i >This shortcut should ideally contain a mouse shortcut since it is based on the mouse position but this is not obligatory</i>
+        </div>
+    </div>
+
+</div>
+
+    
+    <p >This action is triggered when the mouse is close to the pane border, you can change the distance in the options.
+        The resizing direction will be automatically defined based on which border the mouse is closest to.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="distance-to-pane-border" class="def  ">
+        <p class="label "><i >Distance to Pane Border</i>
+        </p>
+        <div class="content">
+    
+    <p >Sets the distance needed to the pane border to trigger the dynamic pane resizing mode. <i >This value is expressed as a percentage of the panes size</i></p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="resize-windows" class="def  ">
+        <p class="label "><i >Resize Windows</i>
+        </p>
+        <div class="content">
+    
+    <p >When enabled, this option allows resizing of windows as well, this can be useful to easily resize floating panels for example.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="color-scheme"
+            data-title="color scheme"
+        >
+            
+            Color Scheme
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#color-scheme">¶</a></span>
+        </h3>
+        <div id="color-scheme-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows customization of Houdini's color scheme, the color scheme preferences available in houdini are very powerful but long and tedious to edit. This feature breaks the general UI items down to 4 colors to easily choose custom colors for your Houdini</p>
+
+    
+    <p >
+    <img class="img-responsive" src="img/color_scheme_demo.gif">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="random-color-scheme" class="def  ">
+        <p class="label "><i >Random Color Scheme</i>
+        </p>
+        <div class="content">
+    
+    <p >Generate a random color scheme for the interface. <i >This color scheme is random but coherent (respecting contrast and making a dark theme)</i></p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="main-color" class="def  ">
+        <p class="label "><i >Main Color</i>
+        </p>
+        <div class="content">
+    
+    <p >The primary color used for the interface background.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="tint-color" class="def  ">
+        <p class="label "><i >Tint Color</i>
+        </p>
+        <div class="content">
+    
+    <p >The accent color used for highlights and selections.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="border-color" class="def  ">
+        <p class="label "><i >Border Color</i>
+        </p>
+        <div class="content">
+    
+    <p >The color used for borders and separators.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="text-color" class="def  ">
+        <p class="label "><i >Text Color</i>
+        </p>
+        <div class="content">
+    
+    <p >The color used for most text and labels.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            <b >Version Compatibility:</b>
+    
+    <p >Due to new api changes, this feature is only available in Houdini 20.5 and above.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="custom-splash-screen"
+            data-title="custom splash screen"
+        >
+            
+            Custom Splash Screen
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#custom-splash-screen">¶</a></span>
+        </h3>
+        <div id="custom-splash-screen-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows you to change or disable the Houdini splash screen</p>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >When this feature is disabled (which is the default), the default Houdini splash screen will be used.
+    To disable the splash screen completely, you need to activate this feature and deactivate the show splash screen option.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="defs">
+    
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="show-splash-screen" class="def  ">
+        <p class="label "><i >Show Splash Screen</i>
+        </p>
+        <div class="content">
+    
+    <p >Choose if you want Houdini to display a splash screen on startup.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="splash-screen-file" class="def  ">
+        <p class="label "><i >Splash Screen File</i>
+        </p>
+        <div class="content">
+    
+    <p >Select a custom image file to use as the splash screen.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >The splash screen size is dependent on the image size.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="most-common-nodes"
+            data-title="most common nodes"
+        >
+            
+            Most Common Nodes
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#most-common-nodes">¶</a></span>
+        </h3>
+        <div id="most-common-nodes-body" class="content">
+            
+                
+        
+    <p class="summary">This feature provides quick access to your most frequently used nodes, it can be used with the tab menu to easily place down the nodes you most commonly used, and also allows you to check your node statistics!</p>
+
+    
+    <p >
+    <img class="img-responsive" src="img/most_common_nodes_01.png">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="show-hide-most-common-nodes" class="def  ">
+        <p class="label "><i >Show/Hide Most Common Nodes</i>
+        </p>
+        <div class="content">
+    
+    <p >Toggle the display of the most common nodes panel inside a network editor.
+        This feature was designed to be used with the tab menu but you can use your own shortcut to display only the most common nodes.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="reset-most-common-nodes" class="def  ">
+        <p class="label "><i >Reset Most Common Nodes</i>
+        </p>
+        <div class="content">
+    
+    <p >Resets your most common nodes statistics.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            
+    
+    <p >This is not undoable meaning you will lose the track of you most used nodes.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    
+    
+    <div id="show-node-statistics" class="def  ">
+        <p class="label "><i >Show Node Statistics</i>
+        </p>
+        <div class="content">
+    
+    <p >Displays a window that shows the statistics of the nodes you have used.</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/most_common_nodes_02.png">
+</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="amount-of-nodes" class="def  ">
+        <p class="label "><i >Amount of Nodes</i>
+        </p>
+        <div class="content">
+    
+    <p >This option lets you set the amount of nodes to display in the menu, these will be ordered from most common to least used.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="show-on-tab-press" class="def  ">
+        <p class="label "><i >Show on tab press</i>
+        </p>
+        <div class="content">
+    
+    <p >When enabled, the most common nodes menu will be displayed next to the tab menu in the network editor.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >The most common nodes list adapts to your workflow over time. Consider resetting it occasionally if your workflow changes significantly.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="scale-rotate-nodes"
+            data-title="scale rotate nodes"
+        >
+            
+            Scale Rotate Nodes
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#scale-rotate-nodes">¶</a></span>
+        </h3>
+        <div id="scale-rotate-nodes-body" class="content">
+            
+                
+        
+    <p class="summary">This feature adds the ability to scale and rotate nodes in the network editor, this feature dynamically creates node shapes to change the appearance of nodes</p>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >The scaling feature can be particularly useful to easily visualize which nodes are the most important in your network.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    <p >
+    <img class="img-responsive" src="img/scale_rotate_nodes_demo.gif">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >These shorcuts are triggered when hovering over a node in the network editor.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="defs">
+    
+    
+    
+    <div id="scale-nodes" class="def  ">
+        <p class="label "><i >Scale Nodes</i>
+        </p>
+        <div class="content">
+    
+    <p >Scale the underlying node while holding the shortcut.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="rotate-nodes" class="def  ">
+        <p class="label "><i >Rotate Nodes</i>
+        </p>
+        <div class="content">
+    
+    <p >Rotate the underlying node while holding the shortcut.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="reset-rotate-scale" class="def  ">
+        <p class="label "><i >Reset Rotate Scale</i>
+        </p>
+        <div class="content">
+    
+    <p >Reset the scale and rotation of the underlying node to default.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >These operations are purely visual and don't affect the node functionality.
+    They can be helpful for organizing complex networks or creating visual hierarchies.
+    All the modifications are saved to the scene as long as you open it with this package.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            <b >Version Compatibility:</b>
+    
+    <p >Unfortunately, due to a bug in Houdini fixed in version 20.5.473, this feature is disabled on previous versions
+    as it causes houdini to crash when changing node shapes through the api.
+    Use version 20.5.473 or higher to use this feature.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="look-inside-node"
+            data-title="look inside node"
+        >
+            
+            Look Inside Node
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#look-inside-node">¶</a></span>
+        </h3>
+        <div id="look-inside-node-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows you to quickly peek inside nodes without needing to dive into them, showing the contents inside.</p>
+
+    
+    <p >
+    <img class="img-responsive" src="img/look_inside_node_demo.gif">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="show-hide-inside-node" class="def  ">
+        <p class="label "><i >Show/Hide Inside Node</i>
+        </p>
+        <div class="content">
+    
+    <p >Hold to display the child nodes inside of a node.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            <i >This shortcut should ideally contain a mouse shortcut since it needs to be held down but this is not obligatory</i>
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >This action only works when hovering over a node in the network editor.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="show-inside-node-on-mmb-press" class="def  ">
+        <p class="label "><i >Show Inside Node on MMB Press</i>
+        </p>
+        <div class="content">
+    
+    <p >When enabled, the inside nodes will be displayed when inspecting a node (middle mouse button).</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="show-on-top-of-node-info-window" class="def  ">
+        <p class="label "><i >Show on Top of Node Info Window</i>
+        </p>
+        <div class="content">
+    
+    <p >Choose whether to display the inside nodes window when it would show on top of the node info window due to limited space.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="background-images"
+            data-title="background images"
+        >
+            
+            Background Images
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#background-images">¶</a></span>
+        </h3>
+        <div id="background-images-body" class="content">
+            
+                
+        
+    <p class="summary">This feature adds a few improvements to the underrated background images in Houdini</p>
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="paste-images-to-background" class="def  ">
+        <p class="label "><i >Paste Images to Background</i>
+        </p>
+        <div class="content">
+    
+    <p >Paste an image from the clipboard as a background image.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >If the copied image is an on disk file, it will be pasted as a normal background image.</p>
+
+
+    
+    <p >If the copied image contains direct image data, if it was copied from the internet for example, you have the choice to paste it as is but it will not be saved with the Houdini scene or to save it to disk (in which case it can be added normally)</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    
+    
+    <div id="flipbook-to-background-gif" class="def  ">
+        <p class="label "><i >Flipbook to Background GIF</i>
+        </p>
+        <div class="content">
+    
+    <p >
+    <img class="img-responsive" src="img/flipbook_to_background_image_demo.gif">
+</p>
+
+
+    
+    <p >Creates a flipbook that will be converted to a GIF and added as a background image GIF.</p>
+
+
+    
+    <p >This uses the default flipbook parameters that can be edited in the bottom right of the scene viewer. 
+    <img class="img-responsive" src="img/flipbook_icon.png">
+</p>
+
+
+    
+    <p >Once the GIF is created, you can save it to disk so it can be saved with the scene, or use it as is in which case it will be destroyed when the scene is closed.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >The flipbook GIFS are limited to 856 pixels and 500 frames total, the GIF quality is not always ideal to view a flipbook but can be very useful as a preview to see what a networks output might look like.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="gif-background-images" class="def  ">
+        <p class="label "><i >GIF Background Images</i>
+        </p>
+        <div class="content">
+    
+    <p >Enables support for animated GIF background images. The GIFs can be edited and parented to nodes just like the regular background images.</p>
+
+
+    
+    <p ><span class="keys"><kbd>Ctrl+i</kbd></span> is the default shortcut to edit background images, or via the network editor menu: <i >Tools &gt; Edit Background Image</i></p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            
+    
+    <p >Using GIFs can lead to performance issues, use with caution. This will be visible if you add a lot of GIFs and a lot of network editors.
+            The GIFs are limited to 856 pixels and 500 frames total, you cannot have more than 12 GIFs at once.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    
+    
+    <div id="drag-and-drop-background-images" class="def  ">
+        <p class="label "><i >Drag and Drop Background Images</i>
+        </p>
+        <div class="content">
+    
+    <p >Allows you to drag and drop images into the network editor directly, these can be GIFs if the above option is enabled and you can add more than one at a time.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="show-selected-node-background" class="def  ">
+        <p class="label "><i >Show Selected Node Background</i>
+        </p>
+        <div class="content">
+    
+    <p >Enabling this option shows a moving yellow gradient background behind the currently selected node. </p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="network-editor-shortcuts"
+            data-title="network editor shortcuts"
+        >
+            
+            Network Editor Shortcuts
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#network-editor-shortcuts">¶</a></span>
+        </h3>
+        <div id="network-editor-shortcuts-body" class="content">
+            
+                
+        
+    <p class="summary">This feature adds additional useful shortcuts to navigate the network editor, using the closest node to the cursor</p>
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="move-up" class="def  ">
+        <p class="label "><i >Move Up</i>
+        </p>
+        <div class="content">
+    
+    <p >Quickly moves up one level in the network hierarchy.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >This only triggers if there is no network item under the cursor.
+            For example the default shortcut allows you to double click anywhere in the empty space to move up a level.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    
+    
+    <div id="dive-into-closest-node" class="def  ">
+        <p class="label "><i >Dive Into Closest Node</i>
+        </p>
+        <div class="content">
+    
+    <p >Dive into the closest node to the cursor.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >This respects dive targets, for example if the node is a Solver, the dive will go to the solver's core.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    
+    
+    <div id="select-closest-node" class="def  ">
+        <p class="label "><i >Select Closest Node</i>
+        </p>
+        <div class="content">
+    
+    <p >Select the node closest to the cursor. <i >Or deselects it if it is already selected</i></p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="disable-closest-node" class="def  ">
+        <p class="label "><i >Disable Closest Node</i>
+        </p>
+        <div class="content">
+    
+    <p >Toggle the bypass flag of the closest node.</p>
+
+</div>
+    </div>
+
+    
+    
+    <div id="toggle-closest-node-render-display-flag" class="def  ">
+        <p class="label "><i >Toggle Closest Node Render/Display Flag</i>
+        </p>
+        <div class="content">
+    
+    <p >Toggle the render/display flag of the closest node.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="distance-to-closest-node" class="def  ">
+        <p class="label "><i >Distance to Closest Node</i>
+        </p>
+        <div class="content">
+    
+    <p >Sets the maximum distance the cursor must be from a node to trigger the above shortcuts.</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="overlay-network-editor"
+            data-title="overlay network editor"
+        >
+            
+            Overlay Network Editor
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#overlay-network-editor">¶</a></span>
+        </h3>
+        <div id="overlay-network-editor-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows you to overlay a network editor to the scene viewer for quick node editing, particularly useful for single screen setups / laptops.</p>
+
+    
+    <p >
+    <img class="img-responsive" src="img/overlay_network_editor_demo.gif">
+</p>
+
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="toggle-overlay" class="def  ">
+        <p class="label "><i >Toggle Overlay</i>
+        </p>
+        <div class="content">
+    
+    <p >Toggles the overlay network editor on and off to easily switch between the two.</p>
+
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            <i >This shortcut should be easily accessible (a mouse button for example) to easily switch between the two when working.</i>
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item note  ">
+        <p class="label"><span class="g fa fa-fw fa-info-circle"></span>Note</p>
+        <div class="content">
+            
+    
+    <p >This shortcut works above a scene viewer, or above the network editor overlay if it is activated.</p>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    
+    
+    <div id="options" class="def  ">
+        <p class="label "><b >Options</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="overlay-window-opacity" class="def  ">
+        <p class="label "><i >Overlay Window Opacity</i>
+        </p>
+        <div class="content">
+    
+    <p >Changes the opacity of the overlay window (25-90%).</p>
+
+</div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+    
+    <div  class="sep  untitled empty">
+        <div class="label"></div>
+        
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="heading  ">
+        <h3 class="label heading" id="embed-window"
+            data-title="embed window"
+        >
+            
+            Embed Window
+            
+                
+                    
+                
+            
+            <span class="headerlink"><a href="#embed-window">¶</a></span>
+        </h3>
+        <div id="embed-window-body" class="content">
+            
+                
+        
+    <p class="summary">This feature allows embedding different windows into the houdini UI</p>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >This is a &ldquo;fun&rdquo; feature that might not have any real use cases.</p>
+
+
+    
+    <p >The most use I&#39;ve found for this is to embed a chrome page and put some music on there while working to easily change music without leaving Houdini.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item warning  ">
+        <p class="label"><span class="g fa fa-fw fa-exclamation-triangle"></span>Warning</p>
+        <div class="content">
+            
+    <div class="platform_group item_group">
+        
+    
+    
+        
+    
+    
+    
+    
+    
+
+    <div class="notice ind-item platform windows ">
+        <p class="label"><span class="g fa fa-fw fa-windows"></span>Windows</p>
+        <div class="content">
+            
+    
+    <p >This feature is only available on Windows OS.</p>
+
+
+        </div>
+    </div>
+
+
+    </div>
+
+    
+    <p >This feature can be quite fun to play around with but keep in mind that it is experimental.</p>
+
+
+    
+    <p >Not all windows will work with this pane tab and when the tab is closed or the window is closed, <b >it must be deleted manually using the task manager for example</b>.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="notices ind-group">
+    
+    
+    
+    
+
+    <div class="notice ind-item tip  ">
+        <p class="label"><span class="g fa fa-fw fa-lightbulb-o"></span>Tip</p>
+        <div class="content">
+            
+    
+    <p >The easiest way to add this tab to a pane is with the + &gt; New Pane Tab Type &gt; HFLOW UI : Embed Window.</p>
+
+
+    
+    <p >
+    <img class="img-responsive" src="img/embed_window.png">
+</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="defs">
+    
+    
+    
+    <div id="shortcuts-actions" class="def  ">
+        <p class="label "><b >Shortcuts / Actions</b>
+        </p>
+        <div class="content">
+    <div class="defs">
+    
+    
+    
+    <div id="create-embed-window-floating-pane" class="def  ">
+        <p class="label "><i >Create Embed Window Floating Pane</i>
+        </p>
+        <div class="content">
+    
+    <p >Creates a new floating pane that contains the &ldquo;embed window&rdquo; interface.</p>
+
+<i >There isn't much use in using this in a floating pane since you might as well use the window directly but this has the advantage of staying on top of houdini</i></div>
+    </div>
+
+    </div>
+</div>
+    </div>
+
+    </div>
+
+    
+            
+        </div>
+    </section>
+
+
+    
+            
+        </div>
+    </section>
+
+
+            
+
+            <table id="postmeta" class="metatable">
+                
+    
+                    
+                    
+    
+
+
+                    
+                
+
+    
+    
+    
+
+
+            </table>
+        </div>
+    </main>
+
+
+</body>
+</html>
